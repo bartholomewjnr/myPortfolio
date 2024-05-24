@@ -1,0 +1,145 @@
+﻿body {  
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    //display: flex;
+    //flex-direction:column;
+    //justify-content: space-between;
+}
+
+header {
+    top: 0px;
+    position: sticky;
+    z-index:99;
+}
+
+header .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0F0844;
+    padding: 0px 20px;
+}
+
+header .navBar .myLogo i {
+    color: #fff;
+    font-size: 30px;
+}
+
+header .navBar ul {
+    display: flex;
+}
+
+header .navBar ul li {
+    list-style: none;
+}
+
+header .navBar ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0F0844;
+    padding: 0px 20px;
+    font-size: 20px;
+    color: #fff;
+    bottom: 0px;
+    position: sticky;
+    bottom: 0px;
+}
+
+footer .top .mediaIcons{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+ 
+        footer .top .mediaIcons {
+            display: flex;
+        }
+
+            footer .top .mediaIcons a{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                margin: 0 8px;
+                text-align: center;
+                line-height: 40px;
+                color: white;
+                font-size: 17px;
+                text-decoration: none;
+                transition: all 0.6s ease;
+            }
+
+                /* facebook */
+                footer .top .media_icons a:nth-child(1) {
+                    background: #4267B2;
+                }
+
+                    footer  .top .media_icons a:nth-child(1):hover {
+                        color: #4267B2;
+                        background: #f5faf8;
+                    }
+
+                /* twitter */
+                footer .top .media_icons a:nth-child(2) {
+                    background: #1DA1F2;
+                }
+
+                    footer .top .media_icons a:nth-child(2):hover {
+                        color: #1DA1F2;
+                        background: #f5faf8;
+                    }
+
+                /* instagram */
+                footer .top .media_icons a:nth-child(3) {
+                    background: #E1306C;
+                }
+
+                    footer   .top .media_icons a:nth-child(3):hover {
+                        color: #E1306C;
+                        background: #f5faf8;
+                    }
+
+                /* Linked-in */
+                footer .top .media_icons a:nth-child(4) {
+                    background: #0077B5;
+                }
+
+                    footer  .top .media_icons a:nth-child(4):hover {
+                        color: #0077B5;
+                        ;
+                        background: #f5faf8;
+                    }
+
+
+                /* youtube */
+
+                footer .top .media_icons a:nth-child(5) {
+                    background: #FF0000;
+                }
+
+                    footer  .top .media_icons a:nth-child(5):hover {
+                        color: #FF0000;
+                        background: #f5faf8;
+                    }
+
+                /* whatsapp */
+
+                footer .top .media_icons a:nth-child(6) {
+                    background: #128C7E;
+                }
+
+                    footer   .top .media_icons a:nth-child(6):hover {
+                        color: #128C7E;
+                        background: #f5faf8;
+                    } 
+

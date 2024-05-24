@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="myMain.master.cs" Inherits="myPortfolio.myMain" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>MY PORTFOLIO</title>
+    <link href="masterStyle.css" rel="stylesheet" />
+    <link href="font-awesome/css/all.css" rel="stylesheet" />
+    <link href="image/power.ico" rel="icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <div class="navBar">
+                <div class="myLogo"> 
+                    <i class="fab fa-slack"></i>
+                </div>
+                <ul>
+                    <li> <a href="Home.aspx">Home</a></li>
+                    <li> <a href="#">Blog</a></li>
+                    <li> <a href="#">Help</a></li>
+                    <li> <a href="Services.aspx">Services</a></li>
+                    <li> <a href="#">Contact</a></li>
+                    <li> <a href="photoGallery.aspx">Photos</a></li>
+                    <li> <a href="#">About</a></li>
+                </ul>
+            </div>
+        </header>
+            
+        <asp:ContentPlaceHolder ID="homeContent" runat="server"> </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="serviceContent" runat="server"> </asp:ContentPlaceHolder>
+        <asp:contentPlaceHolder ID="photoGalleryContent" runat="server"></asp:contentPlaceHolder>
+
+        <footer>
+             <div class="top">                 
+                <!--Social media icons -->
+                <div class="mediaIcons">
+                    <a href="#"> <i class="fab fa-facebook-f"> </i></a>
+                    <a href="#"> <i class="fab fa-twitter"> </i></a>
+                    <a href="#"> <i class="fab fa-instagram"> </i></a>
+                    <a href="#"> <i class="fab fa-linkedin" aria-hidden="true"> </i></a>
+                    <a href="#"> <i class="fab fa-youtube"> </i></a>
+                    <a href="#"> <i class="fab fa-whatsapp"> </i></a>
+                </div>    
+            </div>
+
+             <div class="down">
+                <!--copyright, policies, terms and conditions -->
+                <div class="copyRight"> copyright &#169 Bartholomew. All rights reserved</div>
+                <div class="termsPolicies"><a href="#">Privacy Policy</a> <a href="#">Terms & Conditions</a></div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

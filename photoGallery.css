@@ -1,0 +1,215 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input{
+    display: none;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0px;
+}
+
+h1::before{
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 250px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+.topHeader {
+    background-color: #0F0844;
+    width: 90%;
+    height: 60px;
+    margin: 0px auto 20px auto;
+    align-items: center;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+
+h2{
+    height: 100%;
+    line-height: 60px;
+    padding: 0px 50px;
+    color: #fff;
+    background-color: #808080;
+}
+
+label{
+    color: #fff;
+    display: inline-block;
+    height: 100%;
+    padding: 0px 5px;
+    margin: 0px 20px;
+    line-height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition:color .5s;
+}
+
+label:hover{
+    color: red;
+}
+
+.photoGallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.pic{
+    position: relative;
+    border-radius: 10px;
+    height: 250px;
+    box-shadow: 3px 3px 6px lightgray;
+    cursor: pointer;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.pic::before{
+    content: "Dr. Brght";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 45px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition: 3s;
+}
+
+.pic:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    height: 0px;
+    transition: .3s;
+    background-color:rgba(0,0,0, .4);
+}
+
+.pic:hover:after{
+    height: 100%;
+
+}
+
+.pic:hover:before{
+    margin-top: 0px;
+    opacity: 1;
+}
+
+#check1:checked ~ .container .photoGallery .pic{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check2:checked ~ .container .photoGallery .dining {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check2:checked ~ .container .photoGallery .assemblyHall,
+#check2:checked ~ .container .photoGallery .sporting,
+#check2:checked ~ .container .photoGallery .classRoom{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#check3:checked ~ .container .photoGallery .assemblyHall {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check3:checked ~ .container .photoGallery .dining,
+#check3:checked ~ .container .photoGallery .classRoom,
+#check3:checked ~ .container .photoGallery .sporting {
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#check4:checked ~ .container .photoGallery .sporting {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check4:checked ~ .container .photoGallery .dining,
+#check4:checked ~ .container .photoGallery .classRoom,
+#check4:checked ~ .container .photoGallery .assemblyHall {
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#check4:checked ~ .container .photoGallery .classRoom {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check5:checked ~ .container .photoGallery .dining,
+#check5:checked ~ .container .photoGallery .assemblyHall,
+#check5:checked ~ .container .photoGallery .sporting {
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}

@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="myPortfolio.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Teacching portfolio</title>
+    <link href="masterStyle.css" rel="stylesheet" />
+    <link href="font-awesome/css/all.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+         <header>
+            <div class="navBar">
+            <div class="myLogo"> 
+                <i class="fab fa-slack"></i>
+            </div>
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Help</a></li>
+                <li> <a href="#">Services</a></li>
+                <li> <a href="#">Contact</a></li>
+                <li> <a href="#">About</a></li>
+            </ul>
+            </div>
+        </header> 
+
+        <asp:ContentPlaceHolder ID="homeContent" runat="server"> </asp:ContentPlaceHolder>
+       
+        <footer>
+            <p> copyright &#169 Bartholomew. All rights reserved</p>
+            <ul class="privacyTerms">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </footer>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿.content {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(image/barth.png);
+    background-color: darkorange;
+}
+
+    .content .container {
+        display: flex;
+        position: relative;
+        justify-content: space-around;
+        width: 1000px;
+        height: 500px;
+        margin: 30px;
+    }
+
+        .content .container .box {
+            display: flex;
+            position: relative;
+            height: 500px;
+            width: 250px;
+        }
+
+            .content .container .box:hover {
+                transform: scale(1.1);
+                transition: 1s all;
+                z-index: 1;
+                box-shadow: 0 5px 20px rgba(0,0,0,1);
+            }
+
+
+            .content .container .box .boxContent {
+                position: absolute;
+                width: 100%;
+                height: 250px;
+                align-items: center;
+                overflow: hidden;
+            }
+
+            .content .container .box .boxImage {
+                position: absolute;
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+            }
+
+                .content .container .box .boxImage img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            .content .container .box:nth-child(even) .boxContent {
+                bottom: 0px;
+                left: 0px;
+            }
+
+            .content .container .box:nth-child(odd) .boxImage {
+                bottom: 0px;
+                left: 0px;
+            }
+
+
+            .content .container .box:nth-child(1) .boxContent {
+                background-color: red;
+            }
+
+            .content .container .box:nth-child(2) .boxContent {
+                background-color: yellow;
+            }
+
+            .content .container .box:nth-child(3) .boxContent {
+                background-color: green;
+            }
+
+            .content .container .box:nth-child(4) .boxContent {
+                background-color: blue;
+            }
